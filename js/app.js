@@ -28,6 +28,9 @@ var usrInput = parseInt(prompt())
 		else if (usrInput % 5 === 0) {
 			$('body').append("<li>Buzz</li>");
 		}
+		else if (usrInput % 1 != 0) {
+			$('body').append("<li>Try putting in a number between 1-100 instead!</li>")
+		}
 		else {
 			$('body').append("<li>" + usrInput + "</li>");
 		}
