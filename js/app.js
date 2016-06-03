@@ -17,22 +17,22 @@
 // FizzBuzz Refactor
 $(document).ready(function(e) {
 
-var usrInput = parseInt(prompt())
+	var usrInput = parseInt(prompt())
 
-		if (usrInput % 3 === 0 && usrInput % 5 === 0) {
-			$('body').append("<li>FizzBuzz</li>");
-		}
-		else if (usrInput % 3 === 0) {
-			$('body').append("<li>Fizz</li>");
-		}
-		else if (usrInput % 5 === 0) {
-			$('body').append("<li>Buzz</li>");
-		}
-		else if (usrInput % 1 != 0) {
-			$('body').append("<li>Try putting in a number between 1-100 instead!</li>")
-		}
-		else {
-			$('body').append("<li>" + usrInput + "</li>");
-		}
+	if (usrInput % 3 === 0 && usrInput % 5 === 0) {
+		$('body').append("<li>FizzBuzz</li>");
+	}
+	else if (usrInput % 3 === 0) {
+		$('body').append("<li>Fizz</li>");
+	}
+	else if (usrInput % 5 === 0) {
+		$('body').append("<li>Buzz</li>");
+	}
+	else if (usrInput % 1 != 0) {
+		$('body').append("<li>Try entering a whole number instead!</li>")
+	}
+	else {
+		$('body').append("<li>" + usrInput + "</li>");
+	}
 
 });
